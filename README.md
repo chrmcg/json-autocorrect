@@ -1,4 +1,5 @@
 # Permissive JSON editor
+Try it out: [json.chrmcg.io](https://json.chrmcg.io)
 
 ## Functionality
 - Missing commas are added at newlines
