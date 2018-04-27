@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import JsonEditor from 'json-autocorrect';
 import './App.css';
-import JsonBox from './JsonBox';
 
 class App extends Component {
     constructor(props) {
@@ -22,7 +22,15 @@ class App extends Component {
                         flexDirection: 'row',
                         justifyContent: 'space-between',
                     }}>
-                        <span>Permissive JSON editor by <a href='https://charliemcge.org/e'>@chrmcg</a></span>
+                        <span>
+                            <a href='https://github.com/chrmcg/json-autocorrect'>
+                                JSON Autocorrect
+                            </a>
+                            <span> by </span>
+                            <a href='https://charliemcge.org/e'>
+                                @chrmcg
+                            </a>
+                        </span>
                         <span
                             style={{
                                 color: 'blue',
@@ -63,7 +71,7 @@ class App extends Component {
                     flex: 1,
                     margin: '5px',
                 }}>
-                    <JsonBox
+                    <JsonEditor
                         json={this.state.contents}
                         onChange={obj => this.setState({contents: obj})}
                         debug={window.location.hash === '#debug'}

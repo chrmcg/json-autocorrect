@@ -1,6 +1,6 @@
 {
-  "short_name": "JSON",
-  "name": "Permissive JSON Editor",
+  "short_name": "JSON-AC",
+  "name": "JSON Autocorrect",
   "icons": [
     {
       "src": "favicon.ico",
