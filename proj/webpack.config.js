@@ -6,7 +6,7 @@ const paths = {
 };
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: path.join(paths.SRC, 'index.js'),
     output: {
         path: paths.DIST,
