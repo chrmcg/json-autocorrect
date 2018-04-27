@@ -1,6 +1,6 @@
 /* eslint no-loop-func: 0 */
 
-export const permissiveJsonParse = (json, caretToDebug) => {
+export const parse = (json, caretToDebug) => {
     const debug = typeof caretToDebug === 'number';
 
     const isLetter = char => char.match(/[A-Za-z]/);

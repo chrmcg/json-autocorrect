@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { stringify } from './stringify';
-import { permissiveJsonParse } from './parse';
+import { parse } from './parse';
 
-class JsonBox extends Component {
+class JsonEditor extends Component {
     constructor(props) {
         super(props);
 
@@ -27,7 +27,7 @@ class JsonBox extends Component {
     onChange(text) {
         this.setState({text});
         try {
-            permissiveJsonParse(text);
+            parse(text);
             this.setState({error: false, edited: true});
         } catch (e) {
             this.setState({error: true, edited: true});
@@ -48,7 +48,7 @@ class JsonBox extends Component {
 
     showStateAtCaret() {
         const caret = this.textarea.selectionEnd;
-        const [parserCaret, state] = permissiveJsonParse(this.state.text, caret);
+        const [parserCaret, state] = parse(this.state.text, caret);
 
         this.setState({
             caret,
@@ -59,7 +59,7 @@ class JsonBox extends Component {
 
     onBlur() {
         try {
-            let obj = permissiveJsonParse(this.state.text);
+            let obj = parse(this.state.text);
             this.setState({error: false, edited: false});
 
             if (Object.keys(obj).length === 0) {
@@ -114,4 +114,4 @@ class JsonBox extends Component {
     }
 }
 
-export default JsonBox;
+export default JsonEditor;

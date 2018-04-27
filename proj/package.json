@@ -1,0 +1,14 @@
+{
+  "name": "json-autocorrect",
+  "description": "JSON parser that fixes your commas and quotes. Standalone function with bonus React component included",
+  "main": "src/index.js",
+  "version": "0.1.0",
+  "private": true,
+  "peerDependencies": {
+    "react": ">=15.0.1"
+  },
+  "devDependencies": {
+    "react": ">=15.0.1"
+  },
+  "scripts": {}
+}

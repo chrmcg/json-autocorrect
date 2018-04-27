@@ -1,11 +1,14 @@
 {
-  "name": "json-correct",
-  "version": "0.1.0",
-  "private": true,
+  "name": "json-autocorrect-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

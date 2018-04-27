@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import JsonBox from './JsonBox';
+import { JsonEditor } from '/Users/chrmcg/dev/json-autocorrect/proj/src';
 
 class App extends Component {
     constructor(props) {
@@ -63,7 +63,7 @@ class App extends Component {
                     flex: 1,
                     margin: '5px',
                 }}>
-                    <JsonBox
+                    <JsonEditor
                         json={this.state.contents}
                         onChange={obj => this.setState({contents: obj})}
                         debug={window.location.hash === '#debug'}
