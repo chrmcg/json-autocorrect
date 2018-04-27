@@ -4043,9 +4043,9 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
-json-autocorrect@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/json-autocorrect/-/json-autocorrect-0.0.1.tgz#2d77a593ff3853005a61d7ff07c596ecf7b11407"
+json-autocorrect@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/json-autocorrect/-/json-autocorrect-0.2.0.tgz#f85933b5067a7265161933b8398763d4b0e70d00"
 
 json-loader@^0.5.4:
   version "0.5.7"

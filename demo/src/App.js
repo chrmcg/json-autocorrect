@@ -22,7 +22,15 @@ class App extends Component {
                         flexDirection: 'row',
                         justifyContent: 'space-between',
                     }}>
-                        <span>Permissive JSON editor by <a href='https://charliemcge.org/e'>@chrmcg</a></span>
+                        <span>
+                            <a href='https://github.com/chrmcg/json-autocorrect'>
+                                JSON Autocorrect
+                            </a>
+                            <span> by </span>
+                            <a href='https://charliemcge.org/e'>
+                                @chrmcg
+                            </a>
+                        </span>
                         <span
                             style={{
                                 color: 'blue',
