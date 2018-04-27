@@ -1,8 +1,6 @@
 import JsonEditor from './JsonEditor';
-import { parse } from 'proj/src/parse';
-import { stringify } from 'proj/src/stringify';
+import { parse } from './parse';
+import { stringify } from './stringify';
 
-export { JsonEditor };
-export { parse };
-export { stringify };
-
+export { parse, stringify };
+export default JsonEditor;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { JsonEditor } from '/Users/chrmcg/dev/json-autocorrect/proj/src';
+import JsonEditor from '/Users/chrmcg/dev/json-autocorrect/proj/dist';
 
 class App extends Component {
     constructor(props) {
